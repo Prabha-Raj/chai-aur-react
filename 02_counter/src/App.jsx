@@ -46,7 +46,7 @@ function App() {
       <button onClick={incrementValue}>Increment : {counter}</button>
       &nbsp;&nbsp;
       <button onClick={decrementValue}>Decrement : {counter}</button>
-      <p>{msg}</p>
+      <p className="msg">{msg}</p>
     </>
   )
 }
