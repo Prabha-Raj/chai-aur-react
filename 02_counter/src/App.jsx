@@ -26,6 +26,23 @@ function App() {
     if(counter < 10){
       setMsg(msg = '')
       setCounter(++counter)
+
+      /* # if you want many changes in one click then u should have to use callback parameter.
+
+      setCounter(prevCounter => ++prevCounter)
+      setCounter(prevCounter => ++prevCounter)
+      setCounter(prevCounter => ++prevCounter)
+      setCounter(prevCounter => ++prevCounter)
+      setCounter(prevCounter => ++prevCounter)
+      setCounter(prevCounter => ++prevCounter)
+      setCounter(prevCounter => ++prevCounter)
+      setCounter(prevCounter => ++prevCounter)
+      setCounter(prevCounter => ++prevCounter)
+      setCounter(prevCounter => ++prevCounter)
+      setCounter(prevCounter => ++prevCounter)
+      setCounter(prevCounter => ++prevCounter)
+      setCounter(prevCounter => ++prevCounter)
+      */
     }else{
       setMsg(msg = "You are reached MAXIMUM Limit | to increment value that value is 10")
     }
