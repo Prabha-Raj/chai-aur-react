@@ -18,7 +18,7 @@ function App() {
     if (numberAllowed) str += "0987654321"
     if (charAllowed) str += "!@#$%^&*~|\\/-_+=`"
     for (let i = 1; i <= length; i++) {
-      let char = Math.floor(Math.random() * str.length + 1)
+      let char = Math.floor((Math.random() * str.length) + 1)
       pass += str.charAt(char)
     }
     setPassword(pass)
@@ -38,7 +38,7 @@ function App() {
       setCopyStatus("Copied")
     }
 
-  }, [password])
+  }, [password, length])
 
 
 
